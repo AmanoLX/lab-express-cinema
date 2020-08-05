@@ -9,10 +9,16 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #00B7FF;
 }
 
+.main-container {
+  margin: 20px;
+}
+
+.main-title {
+  margin-bottom: 20px;
+}
 
 /* Homepage */
 
@@ -43,9 +49,69 @@ a {
   padding: 20px 40px;
   border-radius: 50px;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .home-btn:hover {
   background-color: #00B7FF;
   color: #fff;
+}
+
+/* Movies Page */
+
+.movies-container {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 250px;
+  margin: 20px 60px;
+  text-align: center;
+}
+
+.movie-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.movie-title {
+  margin-bottom: 20px;
+}
+
+
+/* Movie Page */
+.details-box {
+  display: flex;
+}
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.details-link,
+.details-title,
+.details-director,
+.details-stars,
+.details-description {
+  margin-bottom: 15px;
+}
+
+.details-description {
+  margin-top: 15px;
+}
+
+
+.details-showtimes-box {
+  display: flex;
+}
+
+.details-showtimes:not(:first-child) {
+  margin-left: 5px;
 }
